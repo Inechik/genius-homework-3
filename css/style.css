@@ -1,5 +1,5 @@
 @font-face {
-  font-display: swap;
+  font-display: swap; 
   font-family: 'Play';
   font-style: normal;
   font-weight: 400;
@@ -14,6 +14,15 @@
   font-weight: 400;
   src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); 
 }
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2'); 
+}
+
 :root{
    --color-primery-light:#FFF;
    --color-primery-dark:#000;
@@ -22,13 +31,37 @@
 
 }
 /*Base*/
-body{
-  color:var(--color-brrand-dark) ;
-  font-family: roboto, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.5;
+
+*{
+    box-sizing: border-box;
 }
+
+body{
+    font-family: 'Roboto',sans-serif ;
+    color: var(--color-brand-dark);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p
+{
+    margin-top: 0; 
+}
+
+
+.section{
+    padding: 48px 0;
+}
+
+.conteiner{
+    width:100%;
+    max-width: 1287px;
+    margin: 0 auto;
+}
+
 address {
 font-style: normal;
 }
@@ -39,23 +72,37 @@ ul{
 
 /*Button*/
 .button{
+    margin-top: 40px;
+    margin-bottom: 14px;
+    border: 2px solid var(--color-brand-light);
+    padding: 16px 32px;
     font-weight: 600;
     color:#FFF;
     background-color:var(--color-brand-light);
-    border: 2px solid var(--color-brand-light);
     border-radius: 32px;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .button:hover{
     background-color:transparent;
     color:var(--color-brand-dark);
-}
-/*Link*/
-.link {
     
+}
+
+
+
+
+
+/*Link*/
+
+.link{
     color: var(--color-brand-dark);
     text-decoration: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .link:hover{
@@ -64,27 +111,145 @@ ul{
 }
 
 /*Hero-section*/
+.hero-section{
+padding-top: 16.52px;
+/*padding-bottom: 126.81px;
+padding-left: 244px;
+padding-right: 666.95px;*/
+
+}
+
 .hero-title{
-    color:var(--color-brand-dark);
-    text-align: left;
-    font-size: 18px;
-    font-weight: 400;
+margin-bottom: 0;
+color:var(--color-brand-dark);
+text-align: left;
+font-size: 18px;
+font-weight: 400;
+
 }
 
 .hero-title .accent{
-   color: var(--color-brand-light) ;
-   font-size: 140px;
-    font-weight: 700 
+
+color: var(--color-brand-light) ;
+font-size: 140px;
+font-weight: 700;
+text-transform: capitalize;
+line-height:0.81429;
+font-style: normal;
+font-family:'Play',sans-serif;
 }
 
-/*Advantages section*/
+.sign-text{
+margin-bottom: 0px;
+padding-top: 40px;    
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5px;
+text-align: center;
+}
+
+  
+/*About-section*/
+.About-section{
+padding-top: 166.48px;
+}
+
+.beauty-title{
+margin-bottom: 40px;
+color: var(--color-brand-dark);
+font-size: 64px;
+font-weight: 700;
+line-height: normal; 
+font-family: 'Play',sans-serif;    
+} 
+.beauty-title .accent{
+text-transform: capitalize; 
+color: var(--color-brand-light);  
+}
+.Quality-text{
+padding-top: 40px;
+margin-bottom: 0;
+color: var(--color-brand-dark);
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+} 
+.Quality-text.brend{
+color: var(--color-brand-dark);
+font-weight: 600;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 1.7272px; 
+text-transform: capitalize;
+}
+
+.Services-text{ 
+margin-bottom: 0; 
+color: var(--color-brand-dark);
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+}
+
+/*Why-section*/
 .section-title{
-    color: var(--color-brand-dark);
-    font-size: 64px;
-    font-weight: 700;
-    line-height: normal;
+color: var(--color-brand-dark);
+font-size: 64px;
+font-weight: 700;
+line-height: normal;
+font-family: 'Play',sans-serif;
     
 }
 .section-title .accent{
-   color: var(--color-brand-light);
+color: var(--color-brand-light);
+   
+}
+.why-text{
+color: var(--color-primery-dark);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height:1.3333;
+text-align: center;
+}
+
+/*Procedures-section*/
+.procedures-text{
+    color: var(--color-primery-light);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height:1.18;
+}
+
+
+/*Footer*/
+.address-link{
+    color: var(--color-primery-light);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.address-link:hover{
+    font-weight: 700;
+    color:var(--color-brand-light) ;
+}
+.address-copyright{
+    color: #747272;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+.link-footer{
+    color: var(--color-primery-light);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;  
+}
+.link-footer:hover{
+   font-weight: 700;
+    color:var(--color-brand-light) ;
 }
